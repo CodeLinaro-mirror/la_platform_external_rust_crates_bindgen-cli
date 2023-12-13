@@ -6,6 +6,7 @@ rust_library_host {
     rustlibs: [
         "libbindgen",
         "libclap",
+        "libclap_complete",
         "libenv_logger",
     ],
     compile_multilib: "first",
