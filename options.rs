@@ -579,7 +579,7 @@ where
     if version {
         println!(
             "bindgen {}",
-            Some("0.69.2").unwrap_or("unknown")
+            option_env!("CARGO_PKG_VERSION").unwrap_or("unknown")
         );
         if verbose {
             println!("Clang: {}", bindgen::clang_version().full);
